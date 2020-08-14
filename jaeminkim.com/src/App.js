@@ -1,7 +1,6 @@
 import React from 'react';
 import { MemoryRouter, Switch, Route } from 'react-router-dom';
 
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,28 +10,25 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import './App.css';
 
-const Test0 = () => <span>test0</span>;
+import { Home } from './components/home'
 
-const Test1 = () => <span>test1</span>;
+import { Contact } from './components/contact'
 
-const Test2 = () => <span>test2</span>;
+import { Pg1 } from './components/pg1'
+
+import { Pg2 } from './components/pg2'
+
+import { Pg3 } from './components/pg3'
+
+import { Pg4 } from './components/pg4'
+
+import { Pg5 } from './components/pg5'
+
+import { Pg6 } from './components/pg6'
 
 const App = () => (
   <MemoryRouter>
-    <Container className="p-3">
-      <Jumbotron>
-
-          <Switch>
-            <Route path="/test1">
-              <Test1 />
-            </Route>
-            <Route path="/test2">
-              <Test2 />
-            </Route>
-            <Route path="/"> 
-              <Test0 />
-            </Route>
-          </Switch>
+    <Container>
 
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="#home">JAEMINKIM.COM</Navbar.Brand>
@@ -41,24 +37,68 @@ const App = () => (
             <Nav className="mr-auto">
 
             <LinkContainer to="/">
-              <Nav.Link>test0</Nav.Link>
+              <Nav.Link>Home</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/test1">
-              <Nav.Link>test1</Nav.Link>
+            <LinkContainer to="/Contact">
+              <Nav.Link>Contact</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/test2">
-              <Nav.Link>test2</Nav.Link>
+            <LinkContainer to="/pg1">
+              <Nav.Link>Pg1</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/pg2">
+              <Nav.Link>Pg2</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/pg3">
+              <Nav.Link>Pg3</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/pg4">
+              <Nav.Link>Pg4</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/pg5">
+              <Nav.Link>Pg5</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/pg6">
+              <Nav.Link>Pg6</Nav.Link>
             </LinkContainer>
 
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
-      </Jumbotron>
+        <Switch>
+          <Route path="/pg1">
+              <Pg1 />
+            </Route>
+            <Route path="/pg2">
+              <Pg2 />
+            </Route>
+            <Route path="/pg3">
+              <Pg3 />
+            </Route>
+            <Route path="/pg4">
+              <Pg4 />
+            </Route>
+            <Route path="/pg5">
+              <Pg5 />
+            </Route>
+            <Route path="/pg6">
+              <Pg6 />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/"> 
+              <Home />
+            </Route>
+          </Switch>
+
+
     </Container>
   </MemoryRouter>
+
+  
 );
 
 export default App;

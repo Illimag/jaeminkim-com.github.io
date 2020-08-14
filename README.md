@@ -100,3 +100,28 @@ Install via npm
 
     npm install react-bootstrap bootstrap
 
+## Components
+
+We are using components in the src folder.
+
+Just create a new dir for each component.
+
+Reference the component from the App.js file in the src this way
+
+    import { Test0 } from './components/home'
+
+Then in the 
+
+    index.js 
+
+Create the compnent and export the component
+
+    import React from 'react';
+    import Card from 'react-bootstrap/Card';
+
+    export const Test0 = () => (
+    <Card>
+    <Card.Body>This tttis some text within a card body.</Card.Body>
+    </Card>
+    )
+
