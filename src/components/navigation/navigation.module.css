@@ -1,0 +1,51 @@
+.navbarwrap{
+    top:.5rem !important;
+    right: .5rem !important;
+    position: absolute !important;
+    
+}
+
+.navbar{
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    display: block !important;
+    position: relative !important;
+}
+
+.logo{
+    color: #000 !important;
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 1.5em !important;
+}
+
+.white{
+    color: #000 !important;
+    font-size: 1em;
+    font-family: 'Source Serif Pro', sans-serif;
+
+}
+
+
+
+
+
+
+.navbarbackground{
+    background: #fff !important;
+    
+    position: relative !important;
+}
+
+.diamond{
+    height:40px;
+    width:40px;
+}
+
+.test{
+    background-color:red;
+}
+
+.sc-gtssRu .fSrPpC{
+    background-color: green;
+}
